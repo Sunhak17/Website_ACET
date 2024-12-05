@@ -1,0 +1,269 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 5px 0 5px 0 white;
+}
+
+.header img{
+    height: 3em;
+    margin-left: 100px;
+    cursor: pointer;
+    padding-right: 45em;
+}
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    background-color: white;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Positioned below the parent */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown li {
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    opacity: 0.5;
+  }
+  
+  /* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+    color: rgb(25, 25, 94);
+    margin-left: 200px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.choose a {
+    color: #11284c;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.choose a:hover{
+    opacity: 0.5;
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 50px;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  .header h2 {
+    font-size: 24px;
+    color: #11284c;
+    margin-top: 10px;
+  }
+  
+  .red-text {
+    color: #d32f2f;
+    font-weight: bold;
+  }
+  
+  /* Adjusted header text alignment */
+  .container h1, .container h2 {
+    margin-left: -20px; /* Move text a bit to the left */
+  }
+  
+  /* Events Section */
+  .previous-events {
+    margin: 20px 0;
+  }
+  
+  .previous-events h2 {
+    font-size: 24px;
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .previous-events h3 {
+    font-size: 18px;
+    color: #11284c;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 300px; /* Adjust height to make the card shorter */
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Adjust height to make the image shorter */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    color: #11284c;
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Trend Section */
+  .trend-section .card-container {
+    display: flex;
+    justify-content: flex-end; /* Align all cards to the right */
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap cards for small screens */
+  }
+  
+  .trend-section .card {
+    width: 300px; /* Consistent card width for better alignment */
+  }
+  
+  /* Footer Section */
+  .footer {
+    background-color: #d32f2f;
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .footer-content p,
+  .footer-content ul {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin: 5px 0;
+  }
+  
+  .footer p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .trend-section .card-container {
+      justify-content: center; /* Center-align cards for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .trend-section .card-container {
+      justify-content: center;
+    }
+  }
+  

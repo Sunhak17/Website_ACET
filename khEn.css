@@ -1,0 +1,356 @@
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 5px 0 5px 0 white;
+}
+
+.header img{
+    height: 3em;
+    margin-left: 100px;
+    cursor: pointer;
+    padding-right: 45em;
+}
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    background-color: white;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Positioned below the parent */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown li {
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    opacity: 0.5;
+  }
+  
+  /* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+    color: rgb(25, 25, 94);
+    margin-left: 200px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.choose a {
+    color: #11284c;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.choose a:hover{
+    opacity: 0.5;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  #great {
+    margin-top: 2em;
+    margin-left: 5px;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1cm;
+    color: #ff4438;
+  }
+  
+  .text{
+    font-size: 1rem;
+    margin-left: 6em;
+    line-height: 1.6;
+    color: #11284c;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .digital {
+    max-width: 300px; /* Adjust as needed */
+    width: 50%;
+    margin: 5em 20em 0 0;
+  }  
+  .Nham{
+    background-color: #ff4438;
+    width: 93em;
+    height: 30em;
+  }
+  .nham{
+    margin-top: 3em;
+    margin-left: 10em ;
+  }
+  #N_2{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+    padding-right: 2em;
+  }
+  #N_3{
+    color: #fff;
+    line-height: 25px;
+    padding-right: 5em;
+    font-size: large;
+  } 
+  #miti{
+    margin-top: -5em;
+    margin-left: 2em;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1cm;
+    color: #ff4438;
+  }
+  #step_1{
+    font-size: 1rem;
+    margin-left: 6em;
+    line-height: 1.6;
+    color: #11284c;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .cta-button {
+    background-color: white;
+    color: #ff4438;
+    margin-left: 6em;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    border:2px solid #ff4438;
+    margin-top: 5px;
+  }
+  .cta-button:hover{
+    background-color: #ff4438;
+    color: #fff;
+    transition: 1s;
+  }
+  .step_3{
+    margin: 5em 10em;
+  }
+  .ONE{
+    background-color: #ff4438;
+    width: 93em;
+    height: 40em;
+  }
+  .one{
+    margin-top: 2em ;   
+    width: 35em;
+    height: 30em;
+    margin-left: 7em;
+    color: white;
+    background-color: #11284c;
+    padding: 2em 2em ;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px); /* Cut corner shape */
+  }
+  #OVF{
+    font-size: 30px;
+  }
+  #N_4{
+    line-height: 25px;
+  }
+  .nham_6{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+  .nham_6 img{
+    margin-top: 1em;
+  }
+  #tool_1{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1cm;
+    color: #ff4438;   
+}
+#tool_2{
+    margin-left: 3em;
+    margin-bottom: 3em;
+    font-size: 15px;
+    line-height: 30px;
+    font-size: large;
+    color: #11284c; 
+}
+ .step-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+ .step {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.step:hover {
+    transition: 0.2s;
+    transform: scale(1.1); /* Increase size by 10% */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Optional: Enhance shadow for hover effect */
+}
+.step img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.step p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
+.Try{
+    margin-top: 5em ;
+    background-color: #ff4438;
+    width: 93em;
+    height: 40em;
+}
+.try{
+    margin-top: 5em;
+    margin-left: 10em;
+    width: 25em;
+    height: 25em;
+}
+#T_2{
+    font-weight: bold;
+    font-size: 52px;
+    text-shadow: 0.08em 0.08em 0.08em rgba(0, 0, 0, 0.4);
+    padding-right: 5em;
+    color: #f8f9fa;
+}
+#T_3{
+    background-color: #f8f9fa;
+    font-weight: 800;
+    color: #ff4438;
+    font-size: 20px;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 7em;
+    height: 2em;
+    cursor: pointer;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+    transition: transform 0.2s ease;
+}
+
+#T_3:hover{
+    transform: scale(1.2);
+}
+.contributors p{
+    margin-top: 1em;
+    margin-left: 1em;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 1cm;
+    color: #ff4438;  
+}
+.img_3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5em;
+    margin-bottom: 5em;
+    width: 15em;
+    height: 15em;
+    gap: 150px;
+}
+.end_1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 93em;
+    height: 20em;
+    background-color: #ff4438;
+  }
+  .c_red{
+    margin-top: 3em;
+    color: white;
+  }
+.last_3 li{
+    margin-top: 2em;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+  }
+  .last_2 li{
+    margin-top: 3em;
+    list-style-type: none;
+    color: white;
+    cursor: pointer;
+  }
+  #ph{
+    padding-left: 2em;
+    text-align: start;
+  }
+  .lastly{
+    font-weight: bold;
+    width: 80em;
+    height: 4em;
+    padding-left: 13em;
+    padding-top: 5px;
+    color: white;
+    background-color: #ff4438;
+  }

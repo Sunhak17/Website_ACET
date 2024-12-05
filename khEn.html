@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACET-Institute of Digital Research</title>
+    <link rel="stylesheet" href="khEn.css">
+</head>
+<body> 
+    <!--header-->
+    <div class="header">
+        <a href="Logo.html">
+            <img src="photo/Logo Acet.png" alt="">
+        </a>
+        <div class="choose">
+            <a href="about.html"><b>About</b></a>
+            <nav>
+                <ul class="menu">
+                  <li class="menu-item">
+                    <a href="#"><b>Research v</b></a>
+                    <ul class="dropdown">
+                      <li><a href="robot.html">Sok Robot</a></li>
+                      <li><a href="KhFastype.html">Khmer Fastype</a></li>
+                      <li><a href="tts.html">KHMER TTS</a></li>
+                      <li><a href="asr.html">KHMER ASR</a></li>
+                      <li><a href="khEn.html">Khmer Encoding</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            <a href="innovation.html"><b>Innovation</b></a>
+            <a href="event.html"><b>Events</b></a>
+        </div>
+    </div>
+    <div class="Great">
+        <div class="content">
+          <div class="text">
+            <p id="great">Khmer Encoding Structure</p>
+            <p>One of the primary concerns with this revision of the encoding is to ensure the <b>one <br>
+                visual form only has one encoding.</b> No two ways to encode the same visual <br>
+                representation. Two strings of code points should not be rendered identically. <br>
+                Otherwise, it would lead to confusion among users, difficulties in consistently and <br>
+                correctly typing certain words and challenges in searching and sorting.
+                <br>
+                <br>
+                The results of this research showing exisiting issues in the current practices of users <br>
+                of the language and recommend what can be done to mitigate those issuses <br>
+                effectively and efficiently without stressing out users. It can be achieved by means of <br>
+                simplified typing that does not require any prior knowledge of Khmer Unicode. Users <br>
+                can type however they want knowing fully well that the output strings are consistent <br>
+                100% of the time.
+            </p>
+            
+          </div>
+          <img src="photo/KES-logo-navy.png" alt="" class="digital">
+        </div>
+    </div>
+
+    <div class="Nham">
+        <div class="content">
+        <img src="photo/KSE-Logo-White.png" alt="" class="nham">
+          <div class="N_1">
+            <p id="N_2">Why Do We Need <br>Consistency in Encoding?</p>
+            <p id="N_3">The current situation, for Khmer, is that users are expected to have a relatively deep <br>
+                understanding for how Khmer is encoded in Unicode in order to type correctly. They <br>
+                are expected to type their coengs, vowels and other diacritics and signs in the right <br>
+                order with nothing to help them visually.              
+                <br>
+                <br>
+                To make the matter worse, there is often more than one way to encode a Khmer <br>
+                phrase and have it render prefectly, and yet only one way is the “correct” way to <br>
+                encode it. For those very experienced in understanding how the Khmer script is stored <br>
+                in Unicode, and with a strong linguistic awareness, there seems to be no problem. But <br>
+                for many users there are problems.
+            </p>
+          </div> 
+        </div>
+    </div>
+
+    <div class="Step">
+        <div class="content">
+          <div class="text_1">
+            <p id="miti">Mitigations</p>
+            <p id="step_1">We aim to help implementers create solutions that allow users to not <br>
+                have to know about Unicode to be able to type their language  <br>
+                correctly. We hope that this document will lead to others that will <br>
+                enable font designers and keyboard implementers to produce fonts <br>
+                and tools that work consistently and enable consistent data entry and <br>
+                rerendering. We do this by first concentrating on describing an <br>
+                unambiguous encoding structure for Khmer.
+                <br>
+                <br>
+                If there is no expected order, users have to be aware of encoding <br>
+                issuses. This is the problem this document attempts to resolve: What <br>
+                is the agreed single correct order to be used?
+            </p>
+            <button class="cta-button">Documentation</button>
+          </div>
+          <img src="photo/Mitigation-Steps.png" alt="" class="step_3">
+        </div>
+    </div>
+
+    <div class="ONE">
+        <div class="content">        
+          <div class="one">
+            <p id="OVF"><b>One Visual Form, One Encoding</b></p>
+            <p id="N_4">If there is only one way to encode something, then it makes it easier to <br>
+                produce a system that works with that one way. Thus, if there is only one <br>
+                way to stored a word, an input method can take a variety of ways that a <br>
+                users might type a word and normalize them into the single correct way. <br>
+                On the other hand, if there multiple ways to encode a word, then the <br>
+                input method cannot do this and the user is expected to resolve the <br>
+                ambiguity and pick the right ordering.             
+                <br>
+                <br>
+                In the technical context where a keyboard only allows a user to type <br>
+                single code points (or short sequences), there has been no other option. <br>
+                Users want to be able to type in a variety of orders and therefore have <br>
+                made use of the existing ambiguities in the encoding. But modern <br>
+                keyboard applications are far more sophisticated and are capable of <br>
+                allowing different typing orders and outputting a single correct order.
+            </p>
+          </div>
+          <div class="nham_6">
+            <img src="photo/nham-1.png" alt="">
+            <img src="photo/Nham-2.png" alt="">
+            <img src="photo/Nham-3-1.png" alt="">
+            <img src="photo/Nham-4-2.png" alt="">
+            <img src="photo/Nham-5.png" alt="">
+            <img src="photo/Nham-6-1.png" alt="">
+           </div> 
+        </div>
+    </div>
+
+    <div class="tools">
+        <div class="content">
+            <div class="tool">
+              <p id="tool_1">Tools</p>
+              <p id="tool_2">With a defined well-formed regex of the orthography syllable structure, we exercise the idea of “One visual form, one encoding”. Fonts should expose invalid character sequences so that users can know and correct their mishap manually, or keyboards should be built in a way that it is smart enough to transform an invalid string to a valid one. Developers can take advantage of a normalizer that normalizes Modern Khmer text to the encoding previously defined in such a way that it looks the same as the input text. Thus if there is bad spelling in the original (for example inappropriate multiple vowels), this code fixes the errors and returns only valid strings corresponding with those.
+              </p>
+              <div class="step-container">
+                <div class="step">
+                    <img src="photo/resize.gif" alt="Giving Us Your Speech">
+                    <h3>Khmer Busra Font</h3>
+                    <p>ensure no identical rendering of the same words with different encodings</p>
+                </div>
+
+                <div class="step">
+                    <img src="photo/cyber-bullying.gif" alt="Giving Time to Generate">
+                    <h3>Khmer Angkor Keyboard</h3>
+                    <p>ease the typing experiences and ensure consistent outputs</p>
+                </div>
+
+                <div class="step">
+                    <img src="photo/coding.gif" alt="Giving You Text">
+                    <h3>Normalizer Code</h3>
+                    <p>The last result the machine will provide the text from your speech in Khmer Langaugenormalize text data and ensure there is no ambiguous strings in the mix.</p>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="Try">
+        <div class="content">
+        <img src="photo/KES-logo-white-980x1026.png" alt="" class="try">
+          <div class="T_1">
+            <p id="T_2">Try it to experience for <br>yourself here!</p>
+            <p id="T_3">LET'S TRY</p>
+          </div> 
+        </div>
+    </div>
+
+    <div class="contributors">
+        <p><b>Contributors</b></p>
+        <div class="img_3">
+            <img src="photo/sil_glyph_logo_taiheritagepro_rgb-980x528.png" alt="">
+            <img src="photo/NPIC-Logo.png" alt="">
+            <img src="photo/CADT10-logo.png" alt="">
+        </div>
+    </div>
+
+    <div class="end_1">
+    <div class="last_3">
+        <h3 class="c_red">ADDRESS</h3>
+        <li>National Road 6A, Kthor, Prek Leap Chroy ​Changvar,</li>
+        <li>Phnom Penh, Cambodia</li>
+    </div>
+
+    <div class="last_2">
+        <li>ABOUT US</li>
+        <li>RESEARCH</li>
+        <li>INNOVATION</li>
+        <li>EVENTS</li>
+    </div>
+
+    <div class="last_3">
+        <h3 class="c_red">CONTACT US</h3>
+        <li id="ph"><b>Phone:</b> +855 10 340 000</li>
+        <li id="ph"><b>Email:</b> pr@cadt.edu.kh</li>
+    </div>
+    </div>
+    <footer class="lastly">
+        <p>IDRI @2024 All Rights Reserved</p>
+    </footer>
+</body>
+</html>

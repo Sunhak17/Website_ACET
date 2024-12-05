@@ -1,0 +1,237 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+.header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 5px 0 5px 0 white;
+}
+
+.header img{
+    height: 3em;
+    margin-left: 100px;
+    cursor: pointer;
+    padding-right: 45em;
+}
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    background-color: white;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Positioned below the parent */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown li {
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    opacity: 0.5;
+  }
+  
+  /* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+    color: rgb(25, 25, 94);
+    margin-left: 200px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.choose a {
+    color: #11284c;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.choose a:hover{
+    opacity: 0.5;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    text-align: center;
+    flex-direction: column ;
+}
+
+.intro-image {
+    margin-top: 50px;
+    width: 160px;
+    height: auto;
+    margin-left: 20px;
+}
+
+.intro p {
+    max-width: 600px;
+    margin-right: 20px;
+}
+
+/* Steps Section */
+.steps {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.steps h2 {
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+.step-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.step p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+}
+
+/* Call-to-Action Section */
+.cta {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-image {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* Footer */
+footer {
+    background-color: #e63946;
+    color: #fff;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+/* Main Title Styling for "Khmer Text-to-Speech" */
+.main-title {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: #E63946; /* Red color matching the design */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

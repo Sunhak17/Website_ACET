@@ -1,0 +1,330 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header{
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 5px 0 5px 0 white;
+}
+
+.header img{
+    height: 3em;
+    margin-left: 100px;
+    cursor: pointer;
+    padding-right: 45em;
+}
+  
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+  
+  .menu-item > a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu-item > a:hover {
+    background-color: white;
+  }
+  
+  /* Dropdown styles */
+  .dropdown {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Positioned below the parent */
+    left: 0;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    display: none; /* Initially hidden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown li {
+    font-weight: bold;
+    padding: 5px 5px;
+    width: 160px;
+  }
+  
+  .dropdown a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    opacity: 0.5;
+  }
+  
+  /* Show dropdown on hover */
+.menu-item:hover .dropdown {
+    display: block;
+}
+.choose{
+    display: flex;
+    flex-direction: row;
+    color: rgb(25, 25, 94);
+    margin-left: 200px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.choose a {
+    color: #11284c;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-right: 2em;
+}
+
+.choose a:hover{
+    opacity: 0.5;
+}
+
+.bot1 {
+    display: flex;
+    width: 200vh;
+    flex-grow: 10;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-grow: 10;
+}
+
+.sok1 {
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    justify-self: center;
+}
+
+.text1 {
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: bold;
+    color: blue;
+}
+
+.text2 {
+    display: flex;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    text-align: center;
+    text-transform: bold;
+    color: rgb(255, 98, 0);
+}
+
+.box1 {
+    background-color: rgb(6, 6, 91);
+    color: orange;
+    padding-left: 100px;
+    padding-top: 10px;
+    font-size: large;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.box1 .content {
+    display: flex;
+    background-color: rgb(255, 64, 0);
+    color: white;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 30px;
+    max-width: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex-wrap: wrap;
+}
+
+.box1 .robot2 {
+    display: flex;
+    justify-self: self-end;
+}
+
+.tech-behind {
+    padding: 80px;
+    color: rgb(255, 64, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tech-behind .content {
+    color: black;
+}
+
+.container {
+    display: flex;
+    margin-left: 85px;
+    flex-direction: row;
+}
+
+.container .khmer_ASR {
+    display: flex;
+    background-color: rgb(5, 5, 109);
+    padding-left: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+}
+
+.container .khmer_ASR:hover {
+    width: 65vh;
+    transition: 1s;
+}
+
+.container .khmer_ASR .img {
+    align-self: center;
+    padding: 30px;
+}
+
+.container .Khmer_chatbot {
+    display: flex;
+    background-color: rgb(5, 5, 109);
+    padding-left: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 40vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.container .Khmer_chatbot .img {
+    align-self: center;
+    padding: 30px;
+}
+
+.container .Khmer_chatbot:hover {
+    width: 50vh;
+    transition: 1s;
+}
+
+.container .Khmer_TTS {
+    display: flex;
+    background-color: rgb(5, 5, 109);
+    padding-left: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 60vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 20px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+}
+
+.container .Khmer_TTS .img {
+    align-self: center;
+    padding: 30px;
+}
+
+.container .Khmer_TTS:hover {
+    width: 65vh;
+    transition: 1s;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background-color: rgb(5, 5, 109);
+    color: rgb(255, 64, 0);
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.right-header .pop {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 25px;
+    font-size: 15px;
+    border-radius: 10px;
+    z-index: 999;
+    border: 1px solid black;
+    display: none;
+}
+
+.right-header .pop li {
+    display: block;
+    color: black;
+    background-color: white;
+    text-align: left;
+    background-color: white;
+}
+
+.right-header:hover .pop {
+    display: block;
+}
+
+.img1 {
+    display: flex;
+    margin-top: 50px;
+    width: 250px;
+    height: 250px;
+    gap: 20px;
+    margin-left: 160px;
+}
+
+.last-box {
+    display: flex;
+    background-color: rgb(255, 60, 0);
+    color: rgb(5, 5, 109);
+    padding-left: 70px;
+    padding-top: 30px;
+    border-radius: 10px;
+    margin-top: 30px;
+    gap: 150px;
+    padding-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.last-box .add {
+    justify-content: flex-start;
+}
+
+.all-right {
+    justify-self: center;
+    align-self: flex-end;
+    background-color: chocolate;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.last-box ul li {
+    color: whitesmoke;
+    margin-top: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+    justify-content: center;
+}
